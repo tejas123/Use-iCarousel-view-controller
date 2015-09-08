@@ -17,7 +17,7 @@ class ViewController: UIViewController, iCarouselDataSource, iCarouselDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         images = NSMutableArray(array: ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg"])
-        vwCarousel.type = iCarouselType.Cylinder
+        vwCarousel.type = iCarouselType.CoverFlow2
         vwCarousel .reloadData()
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -39,7 +39,7 @@ class ViewController: UIViewController, iCarouselDataSource, iCarouselDelegate {
         var itemView: UIImageView
         if (view == nil)
         {
-            itemView = UIImageView(frame:CGRect(x:0, y:0, width:200, height:200))
+            itemView = UIImageView(frame:CGRect(x:0, y:0, width:250, height:250))
             itemView.contentMode = .ScaleAspectFit
         }
         else
